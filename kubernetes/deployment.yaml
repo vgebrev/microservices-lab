@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: veli-svc-deploy
 spec:
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
