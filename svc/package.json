@@ -1,0 +1,19 @@
+{
+  "name": "veli-svc",
+  "version": "1.0.0",
+  "description": "A simple microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "microservices",
+    "lab"
+  ],
+  "author": "veli",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
