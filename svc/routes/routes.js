@@ -3,6 +3,10 @@ var appRouter = function(app) {
         var now = new Date();
         res.send('{ "result": "Hello World", "timestamp": "'+ now.toString() +'" }');
     });
+
+    app.get("/health", function(req, res) {
+        res.send('{ "healthy": "true" }');
+    });
 }
 
 module.exports = appRouter;
