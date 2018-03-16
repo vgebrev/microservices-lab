@@ -1,11 +1,14 @@
-apiVersion: apps/v1beta1
-kind: Deployment
+apiVersion: v1
+kind: ReplicationController
 metadata:
-  name: veli-svc-deploy
+  name: rc-veli-svc
 spec:
-  replicas: 4
+  replicas: 1
+  selector:
+    app: veli-svc
   template:
     metadata:
+      name: veli-svc
       labels:
         app: veli-svc
     spec:
