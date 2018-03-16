@@ -2,6 +2,10 @@
   "name": "veli-svc",
   "version": "1.0.0",
   "description": "A simple microservice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vgebrev/microservices-lab.git"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
