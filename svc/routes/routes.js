@@ -1,6 +1,7 @@
 var appRouter = function(app) {
     app.get("/hello", function(req, res) {
-        res.send('{ "result": "Hello World" }');
+        var now = new Date();
+        res.send('{ "result": "Hello World", "timestamp": "'+ now.toString() +'" }');
     });
 }
 
