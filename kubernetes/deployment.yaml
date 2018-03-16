@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: veli-svc
-        image: vgebrev/veli-svc:0.2
+        image: vgebrev/veli-svc:0.3
         ports:
         - containerPort: 3000

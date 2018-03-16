@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hc-veli-svc
+spec:
+  containers:
+  - name: veli-svc
+    image: vgebrev/veli-svc:0.3
+    ports:
+    - containerPort: 3000
+    livenessProbe:
+      initialDelaySeconds: 2
+      periodSeconds: 5
+      httpGet:
+        path: /health
+        port: 3000
