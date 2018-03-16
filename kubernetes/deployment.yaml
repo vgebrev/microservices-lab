@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: veli-svc-deploy
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: veli-svc
+    spec:
+      containers:
+      - name: veli-svc
+        image: vgebrev/veli-svc:0.1
+        ports:
+        - containerPort: 3000
